@@ -65,7 +65,7 @@ header .links span{
 }
 
 header .links{
-    margin-top: 3hv;
+    margin-top: 2vh;
     margin-left: 3%;
 }
 
@@ -80,24 +80,124 @@ header a{
     top: -0.5vh;
 }
 
-header .links, header .dropper, header a{
-    display: inline-block
+header .links, header a{
+    display: inline-block;
 }
-
-header .dropper{
+/*----
+header .hamburger-menu{
     width: 22px;
     height: 17px;
     background-color: #ffffff;
     margin-left: 72%;
 }
 
-header .dropper i{
+header .hamburger-menu{
     display: block;
     height: 2px;
     width: 22px;
     margin: 5px auto;
     background-color: #292929;
-}
+} 
+
+/*--Hamburger_MEnu--*/
+#menu__toggle {
+    opacity: 0;
+  }
+  
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+    
+  }
+  
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  
+    width: 26px;
+    height: 26px;
+  
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+  
+    width: 100%;
+    height: 2px;
+  
+    background-color: #616161;
+  
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  
+  .menu__box{
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+  
+    width: 300px;
+    height: 100%;
+  
+    margin: 0;
+    padding: 80px 0;
+  
+    list-style: none;
+  
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    opacity: -20%;
+  
+    transition-duration: .25s;
+    z-index: 1;
+  }
+  
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+  
+    color: #333;
+  
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  
+    text-decoration: none;
+  
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+
 .container1{
     display: flex;
     justify-content: space-between;
@@ -203,9 +303,10 @@ header .dropper i{
     font-family: 'ProximaNovaA', sans-serif;
     font-weight: bold;
     color: #505050;
+    margin-left: -20px;
 }
 
-.container1 .main_contant .center h3{
+.container1 .main_contant .center p{
     font-size: 60px;
     font-family: 'ProximaNovaA', sans-serif;
     font-weight: 400;
@@ -406,10 +507,9 @@ header .dropper i{
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 81.25%;
+    width: 81%;
     margin-right: 1.5%;
     display: flex;
-    justify-content: space-between;
     margin-left: 15%;
     margin-top: 10vh;
 }
@@ -446,23 +546,29 @@ header .dropper i{
     text-align: left;
     line-height: 1.5;
 }
+
 .container4 .proskills .flex_box .logo{
     margin-bottom: 3vh;
 }
+
 .container4 .proskills .flex_box .logo span{
     font-size: 30px;
     font-family: 'ProximaNovaA', sans-serif;
     font-weight: bold;
     color: #505050;
 }
+
 .container4 .proskills .flex_box{
     margin-right: 7%;
+    max-width: 600px; /*мое*/
 }
+
 .container4 .proskills .statistics_btns{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 5vh;
 }
+
 .container4 .proskills .statistics_btns .stat_a .high{
     font-family: 'ProximaNovaA', sans-serif;
     font-weight: bold;
@@ -470,13 +576,15 @@ header .dropper i{
     color: #505050;
     margin-bottom: 3vh;
 }
+
 .container4 .proskills .statistics_btns .stat_b .high{
     font-family: 'ProximaNovaA', sans-serif;
     font-weight: bold;
     font-size: 18px;
     color: #505050;
-    margin-bottom: 3vh;
+    margin-bottom: 0vh;
 }
+
 .container4 .proskills .statistics_btns .stat_c .high{
     font-family: 'ProximaNovaA', sans-serif;
     font-weight: bold;
@@ -484,18 +592,22 @@ header .dropper i{
     color: #505050;
     margin-bottom: 3vh;
 }
+
 .container4 .proskills .statistics_btns .stat_a .proc{
     position: relative;
 }
+
 .container4 .proskills .statistics_btns .stat_c .proc{
     position: relative;
 }
+
 .container4 .proskills .statistics_btns .stat_b .proc{
     position: relative;
 }
+
 .container4 .proskills .statistics_btns .stat_a .proc p{
     position: absolute;
-    margin-top: -4.5vh;
+    margin-top: -5.2vh;
     margin-left: 45%;
     font-size: 36px;
     font-family: 'ProximaNovaA', sans-serif;
@@ -504,7 +616,7 @@ header .dropper i{
 }
 .container4 .proskills .statistics_btns .stat_b .proc p{
     position: absolute;
-    margin-top: -4.5vh;
+    margin-top: -5.2vh;
     margin-left: 50%;
     font-size: 36px;
     font-family: 'ProximaNovaA', sans-serif;
@@ -513,10 +625,214 @@ header .dropper i{
 }
 .container4 .proskills .statistics_btns .stat_c .proc p{
     position: absolute;
-    margin-top: -4.5vh;
+    margin-top: -5.2vh;
     margin-left: 50%;
     font-size: 36px;
     font-family: 'ProximaNovaA', sans-serif;
     font-weight: bold;
     color: #505050;
+}
+
+/*--Fifth Page--*/
+
+
+.container5 .center h2{
+    font-size: 30px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    color: #505050;
+    text-align: center;
+    margin-top: 12vh;
+}
+
+.container5 .center .text p{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #505050;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+
+.container5 .center .team{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container5 .center .team .nilla .name{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #505050;
+    margin-top: 1.5vh;
+    margin-bottom: 0.5vh;
+}
+
+.container5 .center .team .nilla .spec{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #737373;
+    margin-bottom: 2vh;
+}
+
+.container5 .center .team .nilla .number{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #737373;
+}
+
+.container5 .center .team .marta .name{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #505050;
+    margin-top: 1.5vh;
+    margin-bottom: 0.5vh;
+}
+
+.container5 .center .team .marta .spec{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #737373;
+    margin-bottom: 2vh;
+}
+
+.container5 .center .team .marta .number{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #737373;
+}
+
+.container5 .center .team .michael .name{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #505050;
+    margin-top: 1.5vh;
+    margin-bottom: 0.5vh;
+}
+
+.container5 .center .team .michael .spec{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #737373;
+    margin-bottom: 2vh;
+}
+
+.container5 .center .team .michael .number{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #737373;
+}
+
+.container5 .center .team .tisa .name{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #505050;
+    margin-top: 1.5vh;
+    margin-bottom: 0.5vh;
+}
+
+.container5 .center .team .tisa .spec{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #737373;
+    margin-bottom: 2vh;
+}
+
+.container5 .center .team .tisa .number{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #737373;
+}
+
+.container6{
+    max-width: 1100px;
+    margin-left: 14%;
+}
+
+.container6 .email{
+    margin-top: 12vh;
+    background-color:#f4f4f4;
+}
+
+.container6 .email .flex_box{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+    padding-bottom: 6vh;
+}
+
+.container6 .email .flex_box .text{
+    margin-top: 6vh;
+    margin-left: -10vh;
+}
+
+.container6 .email .flex_box .text h2{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #505050;
+    margin-bottom: 1vh;
+}
+
+.container6 .email .flex_box .text p{
+    color: #717171;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.container6 .email .flex_box .input{
+    margin-left: -15%;
+    margin-top: 7vh;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #b9b9b9;
+}
+
+.container6 .email .flex_box .input p{
+    display: flex;
+}
+
+.container6 .email .flex_box .input .enter{
+    height: 4.3vh;
+    width: 300px;
+    padding-left: 5%;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #b9b9b9;
+}
+
+.container6 .email .flex_box .input .subscribe{
+    height: 5vh;
+    width: 30%;
+    background-color: #ffe400;
+    color: #505050;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+footer h2{
+    margin-top: 5vh;
+    text-align: center;
+    margin-bottom: 5vh;
+    color:#505050;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
 }

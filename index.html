@@ -15,16 +15,26 @@
 <!--First Page-->
 
 <div class="wrapper">
+    <p><a name="main"></a></p>
     <header>
         <div class="links">
             <span>CREATIVE</span>
         </div>
             <a href="#" style="text-decoration-line: none;">CONTAKT</a>
-        <div class="dropper">
-            <i></i>
-            <i></i>
-            <i></i>
-        </div>
+            <!--Hamberger_Menu-->
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                        <li><a class="menu__item" href="#main">Main Menu</a></li>
+                        <li><a class="menu__item" href="#1st">Our Services</a></li>
+                        <li><a class="menu__item" href="#2nd">Professional Skills</a></li>
+                        <li><a class="menu__item" href="#3rd">Our Team</a></li>
+                </ul>
+            </div>
     </header>
 
     <section class="container1">  
@@ -46,7 +56,7 @@
                         <a href="#">HOME</a>
                     </div>
                     <h2 class="a">Creative agency</h2>
-                    <h3 class="b">Digital design</h3>
+                    <p class="b">Digital Design</p>
                     <div class="btn2">
                         <div class="yelow">
                             <div><img src="./img/yelow_READ_MORE.png" class="btn" alt="yelow"></div>
@@ -66,6 +76,7 @@
  <!--Second Page-->
 
     <section class="container2">
+        <p><a name="1st"></a></p>
         <div class="center">
             <h2>Our Services</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
@@ -204,7 +215,8 @@
 
 <!--Fourth_pege-->
 
-<section class="container4">>
+<section class="container4">
+    <p><a name="2nd"></a></p>
     <div class="proskills">
     <div class="flex_box">
         <div class="about_us">
@@ -214,7 +226,7 @@
         <div class="logo">
             <span>Professional Skills</span>
         </div>
-            <div class="text">
+        <div class="text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
@@ -225,22 +237,25 @@
                 omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
                 totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
                 architecto beatae vitae</p>
-        </div>
+         </div>
          <div class="statistics_btns">
             <div class="stat_a">
                 <p class="high">UI/UX Design</p>
-                <div class="proc"><img class="a" src="./img/yelow_READ_MORE.png" alt="a"></div>
+                <div class="proc"><img class="a" src="./img/yelow_READ_MORE.png" alt="a">
                 <p>84%</p>
+                </div>
             </div>
             <div class="stat_b">
                 <p class="high">Web Design</p>
-                <div class="proc"><img class="b" src="./img/yelow_READ_MORE.png" alt="b"></div>
+                <div class="proc"><img class="b" src="./img/yelow_READ_MORE.png" alt="b">
                 <p>94%</p>
+                </div>
             </div>
             <div class="stat_c">
-                <p class="high">Web Design</p>
-                <div class="proc"><img class="c" src="./img/yelow_READ_MORE.png" alt="c"></div>
-                <p>98%</p>
+                <p class="high">Web Deb</p>
+                <div class="proc"><img class="c" src="./img/yelow_READ_MORE.png" alt="c">
+                 <p>98%</p>
+                </div>
             </div>
         </div>
      </div>   
@@ -249,6 +264,62 @@
         </div>
     </div>
 </section>
+
+<!--Fifth Page-->
+<section class="container5">
+    <p><a name="3rd"></a></p>
+        <div class="center">
+            <div class="text">
+                <h2>Our Team</h2>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</P>
+            </div>
+            <div class="team">
+                <div class="nilla">
+                    <img src="./img/Nilla_Doe.png" alt="Nilla Doe">
+                    <p class="name">NILLA DOE</p>
+                    <p class="spec">CREATIVE DESIGNER</p>
+                    <p class="phone">+4 72 39845588</p>
+                </div>
+                <div class="marta">
+                    <img src="./img/Marta_Smith.png" alt="Marta Smith">
+                    <p class="name">Marta Smith</p>
+                    <p class="spec">FINANCE SUPPORT</p>
+                    <p class="phone">+4 72 31847322</p>
+                </div>
+                <div class="michael">
+                    <img src="./img/Michael_Doe.png" alt="Muchael Doe">
+                    <p class="name">MICHAEL DOE</p>
+                    <p class="spec">OUNER CONSULTING</p>
+                    <p class="phone">+4 72 38432257</p>
+                </div>
+                <div class="tisa">
+                    <img src="./img/Tisa_Doe.png" alt="Tisa Doe">
+                    <p class="name">TISA DOE</p>
+                    <p class="spec">FINANCE SUPPORT</p>
+                    <p class="phone">+4 72 58693452</p>
+                </div>
+            </div>
+        </div>
+</section>
+<section class="container6">
+    <div class="email">
+        <div class="flex_box">
+            <div class="text">
+                <h2>Subscribe to our Newsletter</h2>
+                <p>Subscribe to our Newsletter and get 30% off free downloads mockups</p>
+            </div>
+            <div class="input">
+                <form action="#">
+                    <p><input class="enter" type="text" name="q" placeholder="ENTER YOU E-MAIL" aria-label="Recipient's username" aria-describedby="basic-addon2"> 
+                    <input class="subscribe" type="submit" value="SUBSCRIBE"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <h2>&#169; 2018 free-psd-templates.com</h2>
+</footer>
 </div>
 <script defer src="./js/all.js"></script>
 <script src="wow.min.js"></script>
