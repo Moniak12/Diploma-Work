@@ -1,0 +1,522 @@
+/*RESET.CSS*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*END RESET.CSS*/
+
+.wrapper{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+/*--First Page--*/
+header{
+    height: 50px;
+    background-color: #ffffff;
+}
+
+header .links span{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #7f7f7f;
+}
+
+header .links{
+    margin-top: 3hv;
+    margin-left: 3%;
+}
+
+header a{
+    position: relative;
+    font-size: 14px;
+    font-family: 'ProximaNovaA', sans-serif;
+    color: #505050;
+    font-weight: 400;
+    margin-left: 7%;
+    text-decoration: none;
+    top: -0.5vh;
+}
+
+header .links, header .dropper, header a{
+    display: inline-block
+}
+
+header .dropper{
+    width: 22px;
+    height: 17px;
+    background-color: #ffffff;
+    margin-left: 72%;
+}
+
+header .dropper i{
+    display: block;
+    height: 2px;
+    width: 22px;
+    margin: 5px auto;
+    background-color: #292929;
+}
+.container1{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3.8% 0 2.5%;
+    width: 93.7%;
+    min-height: 780px;
+}
+
+.container1 .social{
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 5vh;
+    position: relative;
+}
+
+.container1 .social .btn1{
+    transform: rotate(270deg);
+    justify-self: flex-start;
+    margin-top: 25vh;
+    margin-left: -40%;
+}
+
+.container1 .social .btn1 a{
+    color: #7f7f7f;
+    font-size: 14px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.container1 .social .btn1 a:hover{
+    color: #505050;
+}
+.container1 .social .soc{
+    margin-left: 0%;
+}
+.container1 .social .soc div{
+    margin-top: 20px;
+}
+.container1 .social .soc a{
+    color: #7f7f7f;
+    text-decoration: none;
+}
+.container1 .social .soc a:hover{
+    color: #505050;
+}
+
+.container1 .main_contant{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 69.3%;
+    margin-right: 1.5%;
+}
+.container1 .main_contant .center{
+    position: absolute;
+    top: 300px;
+    left: -19%;
+}
+.container1 .main_contant .iMac{
+    background-color: #f4f4f4;
+    width:100%;
+}
+.container1 .main_contant .iMac .img1 img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 50% 0 10% 37.3%;
+    width: 63.6%;
+    height: auto;
+    max-height: 570px;
+}
+.container1 .main_contant .center .home_btn{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 5vh;
+} 
+.container1 .main_contant .center .home_btn i{
+    display: block;
+    height: 2px;
+    width: 25px;
+    background-color: #cacaca;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.container1 .main_contant .center .home_btn a{
+    font-size: 14px;
+    font-family: 'ProximaNovaA', sans-serif;
+    color: #cacaca;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.container1 .main_contant .center .home_btn a:hover{
+    color: #505050;
+}
+
+.container1 .main_contant .center h2{
+    font-size: 62px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    color: #505050;
+}
+
+.container1 .main_contant .center h3{
+    font-size: 60px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    color: #505050;
+}
+
+.container1 .main_contant .center .a{
+    margin-bottom: 2vh;
+}
+
+.container1 .main_contant .center .b{
+    margin-bottom: 7vh;
+}
+
+.container1 .main_contant .btn2{
+    position: relative;  
+}
+
+.container1 .main_contant .btn2 a{
+    font-size: 14px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    color: #7f7f7f;
+    text-decoration: none;
+    position: absolute;
+    margin-top: -3.8vh;
+    margin-left: 6%;
+}
+
+.container1 .main_contant .btn2 a:hover{
+    color: #505050;
+}
+
+/*--Second Page--*/
+
+.center{
+    max-width: 1100px;
+	width: 100%;
+    margin: 0 auto;
+}
+
+.container2 .center h2{
+    text-align: center;
+    margin-top: 10vh;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #505050;
+}
+.container2 .center p{
+    text-align: center;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #505050;
+    margin-top: 2vh;
+}
+.container2 .center .galery{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container2 .center .galery h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color:#505050;
+    margin-left: 5%;
+    margin-bottom: -1vh;
+    position: absolute;
+    padding-left: 25%;
+}
+.container2 .center .galery p{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:#505050;
+    text-align: justify;
+}
+.container2 .center .galery .services{ 
+    width: 30%;
+    margin: 2.5% 1.5%;
+    position: relative;
+    
+}
+.container2 .center .galery .services .c{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.container2 .center .galery .services .c img{
+    margin-right: 5%;
+}
+
+/*--Third Page--*/
+
+.boxes{
+    max-width: 1100px;
+	width: 100%;
+    margin: 0 auto;
+}
+
+.container3 .boxes ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 9vh;
+}
+.container3 .boxes ul li{
+    display: inline-block;
+    margin: 0 2%;
+}
+.container3 .boxes ul li a{
+    color: #7c7c7c;
+    font-size: 14px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 1vh;
+    border-bottom: 2px solid #ffffff;
+}
+
+.container3 .boxes ul li a:hover{
+    color:#505050;
+    border-bottom: 2px solid yellow;
+}
+
+.container3 .boxes .box6{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 7vh;
+}
+
+.container3 .boxes .box6 .pic{
+    margin: 1% -0.5%
+}
+.container3 .boxes .box6 .pic .a, .b{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 3vh;
+    color:#7f7841;
+    margin-left: -2%;
+}
+.container3 .boxes .box6 .pic .c{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 4vh;
+    line-height: 1.5;
+    text-align: center;
+    color:#7f7841;
+    margin-left: -2.5%;
+}
+.container3 .boxes .box6 .pic .btn{
+    margin-top: 5.5vh;
+    margin-left: -55%;
+    
+}
+.container3 .boxes .box6 .pic .btn a{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color:#7f7841;
+    text-decoration: none;
+}
+.container3 .box .box6.pic .btn a:hover{
+    color: #505050;
+}
+.container3 .btn{
+    position: relative;
+    text-align: center;
+    margin-top: 3vh;
+}
+.container3 .btn a{
+    font-size: 14px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    color: #cacaca;
+    text-decoration: none;
+    position: absolute;
+    margin-top: -3.7vh;
+    margin-left: -2%;
+}
+.container3 .btn a:hover{
+    color: #505050;
+}
+
+/*--Fourth Page--*/
+
+.container4 .proskills{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 81.25%;
+    margin-right: 1.5%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-top: 10vh;
+}
+.container4 .proskills .flex_box .about_us{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 3vh;
+    margin-top: 6vh;
+}
+.container4 .proskills .flex_box .about_us i{
+    display: block;
+    height: 2px;
+    width: 25px;
+    background-color: #cacaca;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.container4 .proskills .flex_box .about_us a{
+    font-size: 14px;
+    font-family: 'ProximaNovaA', sans-serif;
+    color: #cacaca;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.container4 .proskills .flex_box .about_us a:hover{
+    color: #505050;
+}
+.container4 .proskills .flex_box .text p{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #505050;
+    text-align: left;
+    line-height: 1.5;
+}
+.container4 .proskills .flex_box .logo{
+    margin-bottom: 3vh;
+}
+.container4 .proskills .flex_box .logo span{
+    font-size: 30px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    color: #505050;
+}
+.container4 .proskills .flex_box{
+    margin-right: 7%;
+}
+.container4 .proskills .statistics_btns{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+.container4 .proskills .statistics_btns .stat_a .high{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #505050;
+    margin-bottom: 3vh;
+}
+.container4 .proskills .statistics_btns .stat_b .high{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #505050;
+    margin-bottom: 3vh;
+}
+.container4 .proskills .statistics_btns .stat_c .high{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #505050;
+    margin-bottom: 3vh;
+}
+.container4 .proskills .statistics_btns .stat_a .proc{
+    position: relative;
+}
+.container4 .proskills .statistics_btns .stat_c .proc{
+    position: relative;
+}
+.container4 .proskills .statistics_btns .stat_b .proc{
+    position: relative;
+}
+.container4 .proskills .statistics_btns .stat_a .proc p{
+    position: absolute;
+    margin-top: -4.5vh;
+    margin-left: 45%;
+    font-size: 36px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    color: #505050;
+}
+.container4 .proskills .statistics_btns .stat_b .proc p{
+    position: absolute;
+    margin-top: -4.5vh;
+    margin-left: 50%;
+    font-size: 36px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    color: #505050;
+}
+.container4 .proskills .statistics_btns .stat_c .proc p{
+    position: absolute;
+    margin-top: -4.5vh;
+    margin-left: 50%;
+    font-size: 36px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    color: #505050;
+}
